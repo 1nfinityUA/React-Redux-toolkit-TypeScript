@@ -1,0 +1,41 @@
+.root {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+    .searchLine {
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 10px;
+        width: 40rem;
+        height: 2.3rem;
+        
+        padding-left: 15px;
+        font-size: 16px;
+        @media (max-width: 1024px) {
+            width: 25rem;
+        }
+        @media (max-width: 735px) {
+            width: 15rem;
+        }
+        @media (max-width: 500px) {
+            width: 20rem;
+        }
+        &:focus {
+            border: 1px solid rgba(0,0,0,0.3);
+        }
+    }
+    .iconSearch {
+        width: 2.3rem;
+        margin-right: 10px;
+
+    }
+    .iconClose {
+        position: absolute;
+        right: 10px;
+        opacity: 0.2;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
